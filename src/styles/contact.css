@@ -1,0 +1,121 @@
+
+/* .contact{
+    background-image: url('../Project/Polygon-0.2s-1536px.svg') !important;
+    overflow: hidden;
+    height:100vh !important;
+    width:100vw !important;
+} */
+
+
+input[type="text"],input[type="email"],textarea{
+    width:100%;
+    border:0;
+    background:#115173;
+    height:50px;
+    font-size:16px;
+    color:#fff;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:120px;
+}
+
+.half{
+    display:flex;
+    gap:1rem;
+}
+
+input{
+    margin-bottom: 0.5rem;
+}
+
+.form-btn{
+    letter-spacing: 3px;
+    font-size: 16px;
+    background: 0 0;
+    text-transform: uppercase;
+    border:1px solid #ffd700;
+    float:right;
+    border-radius:4px;
+    cursor:pointer;
+    padding:8px 10px;
+}
+.left{ 
+    margin-right: 2rem;
+}
+
+.map-wrap{
+    /* background: rgba(8, 253, 216, 0.1); */
+  float: right;
+  width: 50%;
+  height: 90%;
+  /* margin-top: -3%; */
+  margin: 1rem 0;
+  margin-right:2rem;
+}
+
+.leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+
+.map-info{
+    width: 218px;
+    background-color: #000;
+    position: absolute;
+    z-index: 9999;
+    top: 11%;
+    right: 20%;
+    width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+
+}
+
+.map-info span{ 
+    font-size: 16px;
+      color: #ffd700;
+}
+
+
+
+@media (max-width:60em){
+	.contact-form{
+        width:80%;
+        margin-top:1rem;
+    }
+    .m-4{
+        margin-top:35% !important;
+    }
+    .contact .left p{
+        width:80%;
+    }
+    .contact .left h1{
+        margin-bottom: 1rem;
+    }
+    .map-wrap{
+        display:none;
+
+        /* width: 439px;
+        height: 412px;
+        position: relative;
+        /* left: 18%; */
+        /* top: 18px;
+        left: -3%;  */
+    }
+   
+}
+
+@media (max-width: 36em){
+    .contact{
+        height:99vh;
+    }
+}
