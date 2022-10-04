@@ -1,10 +1,7 @@
 import React from 'react';
 import "../styles/background.css"
-
-
 function Background() {
   return (
-   
     <div id="retrobg">
               <div id="retrobg-sky">
               <div id="retrobg-stars">
@@ -149,8 +146,7 @@ function Background() {
           </div>
           <div id="retrobg-groundShadow"></div>
         </div>
-          </div> 
-    
+      </div> 
   )
 }
 

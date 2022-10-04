@@ -19,6 +19,7 @@ function Home() {
       setLoading(false);
     }, 1200);
   });
+  
   return (
     <div className="Home">
       {loading ? (

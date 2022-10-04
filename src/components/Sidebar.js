@@ -11,9 +11,6 @@ import {
   faTimeline,
 } from "@fortawesome/free-solid-svg-icons";
 import useHover from "../hooks/useHover";
-
-// npm i --save @fortawesome/free-brands-svg-icons
-// import { faGithub,faInstagram } from '@fortawesome/free-brands-svg-icons'
 import {
   faInstagram,
   faGithub,

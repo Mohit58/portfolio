@@ -1,54 +1,36 @@
 const data = [
     {
-        heading:"Wrote My First Dev.to Program",
-        date:"1 Jan 2022",
-        link:"https://dev.to/jay123",
-        origin : "Dev.to",
+        heading:"First Job",
+        date:"16 Aug 2016",
+        link:"https://www.aspentech.com/en",
+        origin : "Apen Technologies",
         originColor: "Black",
         conversionText : "Check out my profile"
     },
     {
-        heading:"Completed My 1st 1000 views on dev.to",
-        date:"3 Jan 2022",
-        link:"https://dev.to/jay123",
-        origin : "Dev.to",
+        heading:"Second Job",
+        date:"14 Nov 2016",
+        link:"https://www.adaan.com/",
+        origin : "Adaan Digitals Solution",
         originColor: "Black",
         conversionText :  "Check out my profile"
     },
     {
-        heading:"Completed My 2000 views on dev.to",
-        date:"12 Jan 2022",
-        link:"https://dev.to/jay123",
-        origin : "Dev.to",
+        heading:"Third Job",
+        date:"14 Nov 2018",
+        link:"https://pantelwar.com/",
+        origin : "Pantelwar Pvt Ltd",
         originColor: "Black",
         conversionText :  "Check out my profile"
     },
     {
-        heading:"Completed My 4500 views on dev.to",
-        date:"17 Jan 2022",
-        link:"https://dev.to/jay123",
-        origin : "Dev.to",
+        heading:"Present Job",
+        date:"4 Nov 2021",
+        link:"https://www.codvo.ai/",
+        origin : "Codvo.ai",
         originColor: "black",
         conversionText :  "Check out my profile"
     },
-    {
-        heading:"Got 1st Internship at Dreadthnought",
-        date:"1 July 2022",
-        link:"https://linkedIn.com/jayant",
-        origin : "LinkedIn",
-        originColor: "#0a66c2",
-        conversionText :  "Check out my profile"
-    },
-    {
-        heading:"Got 2nd Internship at Errsole",
-        date:"15 July 2022",
-        link:"https://linkedIn.com/jayant",
-        origin : "LinkedIn",
-        originColor: "#0a66c2",
-        conversionText :  "Check out my profile"
-    },
-   
-   
 ]
 
 export default data;

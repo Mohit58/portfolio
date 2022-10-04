@@ -13,14 +13,12 @@ const override = {
     marginTop:"21rem",
   };
 
-
 function Contact() {
-    
     const position = [29.472561,77.707130]
     const form = useRef();
+    const [loading, setLoading] = useState(true);
     const sendEmail = (e) => {
         e.preventDefault();
-    
         emailjs.sendForm('service_90674qt', 'template_wfc6fhd', form.current, 'VPBwW_dwnhH7M6Gi4')
           .then((result) => {
               console.log(result.text);
@@ -29,9 +27,7 @@ function Contact() {
           });
           e.target.reset();
       };
-
-      let [loading, setLoading] = useState(true);
-
+      
     useEffect(()=>{
         setTimeout(()=>{
             setLoading(false);
@@ -64,8 +60,6 @@ function Contact() {
                     </form>
                 </div>
             </div>
-            
-           {/* <div className="right map> */}
            <div className=" map-wrap">
                <div className="map-info">
                    Mohit Kumar
@@ -84,10 +78,8 @@ function Contact() {
     </Marker>
   </MapContainer>
   </div>
-  
   </div>}
   </>
-       
     )
 }
 

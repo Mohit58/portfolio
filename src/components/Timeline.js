@@ -5,8 +5,8 @@ import TimelineItems from './TimelineItems'
 import "../styles/timeline.css";
 
 function Timeline() {
-  return (<>
-      
+  return (
+  <>
     <div  className='background'>
        <Background/>
        <div className='heading timeline__heading'>
@@ -25,9 +25,7 @@ function Timeline() {
             })
         }
     </div>
-   
     </div>
-  
   </>
   )
 }

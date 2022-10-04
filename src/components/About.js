@@ -3,17 +3,12 @@ import AboutUs from "../assets/images/about.png"
 import "../styles/about.css"
 import PacmanLoader	 from "react-spinners/PacmanLoader";
 
-
 const override = {
   display: "block",
   margin: "0 auto",
   borderColor: "red",
   marginTop:"21rem",
 };
-
-
-
-
 function About() {
   let [loading, setLoading] = useState(true);
 
