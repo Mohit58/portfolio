@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import PacmanLoader	 from "react-spinners/PacmanLoader";
-import 'leaflet/dist/leaflet.css';
 
 const override = {
     display: "block",
