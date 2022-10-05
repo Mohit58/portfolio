@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react'
 import "../styles/contact.css";
 import emailjs from '@emailjs/browser';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+// import 'leaflet/dist/leaflet.css';
 import PacmanLoader	 from "react-spinners/PacmanLoader";
 
 const override = {
@@ -13,7 +13,7 @@ const override = {
   };
 
 function Contact() {
-    const position = [29.472561,77.707130]
+    // const position = [29.472561,77.707130]
     const form = useRef();
     const [loading, setLoading] = useState(true);
     const sendEmail = (e) => {
@@ -68,14 +68,14 @@ function Contact() {
                    Kelapur Jasmor, Miranpur<br/>
                    <span>mk581991@gmail.com</span>
                </div>
-          <MapContainer  style={{ width: '100%', height: '100%',position: 'relative'}}center={position} zoom={13} scrollWheelZoom={false}>
+          {/* <MapContainer  style={{ width: '100%', height: '100%',position: 'relative'}}center={position} zoom={13} scrollWheelZoom={false}>
     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
     <Marker position={position}>
       <Popup>
         Mohit Lives Here, come over for a cup of coffee :) 
       </Popup>
     </Marker>
-  </MapContainer>
+  </MapContainer> */}
   </div>
   </div>}
   </>
