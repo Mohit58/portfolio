@@ -41,12 +41,10 @@ function Home() {
                 steps={[
                   "Frontend Engineer",
                   1800,
-                  "JavaScript Developer",
+                  "JS Developer",
                   1800,
                   "React Developer",
                   1800,
-                  "Learning NodeJS",
-                  1200,
                 ]}
                 loop={Infinity}
                 wrapper="b"
