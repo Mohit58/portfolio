@@ -56,7 +56,7 @@ function Home() {
               href="https://drive.google.com/file/d/1IhW06rSruprOHnr9abhUQej6Tc0L10tC/view?usp=sharing"
               className="btn"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Download CV
             </a>

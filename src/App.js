@@ -1,16 +1,13 @@
 import Home from './components/Home.js';
 import Contact from './components/Contact';
-// import Projects from './Components/Projects';
 import About from './components/About.js';
 import Layout from './components/Layout';
-// import Blogs from './Components/Blogs';
 import Timeline from './components/Timeline';
-import {Route,Routes,useParams} from 'react-router-dom'
+import {Route,Routes} from 'react-router-dom'
 import React from "react";
 import Projects from './components/Projects.js';
+import './app.css';
 function App() {
-  let {id} = useParams();
-  console.log(id);
   return (
       <Routes>
         <Route path="/" element={<Layout/>}>

@@ -90,7 +90,7 @@ function Sidebar() {
           <a
             href="https://github.com/Mohit58"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -99,7 +99,7 @@ function Sidebar() {
           <a
             href="https://www.instagram.com/mohitpal321/?next=%2F"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>

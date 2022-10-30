@@ -35,7 +35,7 @@ function Projects() {
                 projects.map((p,index)=>{
                     let image = p.image;
                     return (
-                    <a key={index} href={p.link} target="_blank" rel="noreferrer">
+                    <a key={index} href={p.link} target="_blank" rel="noopener noreferrer">
                     <Card sx={{ maxWidth: 345 }}>
                      <CardActionArea>
                          <CardMedia

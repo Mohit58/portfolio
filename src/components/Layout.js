@@ -21,137 +21,117 @@ const Layout = () => {
         loaded={particlesLoaded}
         options={{
           fpsLimit: 60,
-          fullScreen: {
-            enable: true,
-          },
           particles: {
             number: {
               value: 0,
+              density: {
+                enable: true,
+                value_area: 800
+              }
             },
             color: {
-              value: "",
+              value: "#ffffff"
             },
             shape: {
-              type: ["circle", "square"],
+              type: "circle"
             },
             opacity: {
-              value: { min: 0, max: 1 },
+              value: 1,
+              random: false,
               animation: {
                 enable: true,
-                speed: 1,
-                startValue: "max",
-                destroy: "min",
-              },
+                speed: 0.5,
+                minimumValue: 0,
+                sync: false
+              }
             },
             size: {
-              value: { min: 3, max: 7 },
-            },
-            life: {
-              duration: {
-                sync: true,
-                value: 7,
-              },
-              count: 1,
+              value: 8,
+              random: { enable: true, minimumValue: 4 },
+              animation: {
+                enable: false,
+                speed: 20,
+                minimumValue: 4,
+                sync: false
+              }
             },
             move: {
               enable: true,
               gravity: {
                 enable: true,
+                acceleration: -0.5
               },
-              drift: {
-                min: -2,
-                max: 2,
-              },
-              speed: { min: 10, max: 30 },
-              decay: 0.1,
-              direction: "none",
+              speed: 5,
+              direction: "top",
               random: false,
               straight: false,
               outModes: {
                 default: "destroy",
-                top: "none",
+                bottom: "none"
               },
-            },
-            rotate: {
-              value: {
-                min: 0,
-                max: 360,
-              },
-              direction: "random",
-              move: true,
-              animation: {
+              attract: {
                 enable: true,
-                speed: 60,
-              },
-            },
-            tilt: {
-              direction: "random",
-              enable: true,
-              move: true,
-              value: {
-                min: 0,
-                max: 360,
-              },
-              animation: {
+                distance: 300,
+                rotate: {
+                  x: 600,
+                  y: 1200
+                }
+              }
+            }
+          },
+          interactivity: {
+            detectsOn: "canvas",
+            events: {
+              onClick: {
                 enable: true,
-                speed: 60,
+                mode: "push"
               },
-            },
-            roll: {
-              darken: {
+              onHover: {
                 enable: true,
-                value: 25,
+                mode: "repulse"
               },
-              enable: true,
-              speed: {
-                min: 15,
-                max: 25,
-              },
+              resize: true
             },
-            wobble: {
-              distance: 30,
-              enable: true,
-              move: true,
-              speed: {
-                min: -15,
-                max: 15,
+            modes: {
+              bubble: {
+                distance: 400,
+                duration: 2,
+                opacity: 0.8,
+                size: 40
               },
-            },
+              push: {
+                quantity: 4
+              },
+              repulse: {
+                distance: 100,
+                duration: 0.4
+              }
+            }
           },
           detectRetina: true,
           background: {
-            color: "#000000",
+            color: "#000000"
           },
-          emitters: {
-            direction: "none",
-            spawnColor: {
-              value: "#f00",
-              animation: {
-                l: {
-                  enable: true,
-                  offset: {
-                    min: 0,
-                    max: 100,
-                  },
-                  speed: 0,
-                  sync: false,
-                },
+          emitters: [
+            {
+              direction: "top",
+              particles: {
+                color: "#ffffff"
               },
-            },
-            life: {
-              count: 0,
-              duration: 0.1,
-              delay: 0.6,
-            },
-            rate: {
-              delay: 0.1,
-              quantity: 100,
-            },
-            size: {
-              width: 0,
-              height: 0,
-            },
-          },
+              rate: {
+                quantity: 1,
+                delay: 0.1
+              },
+              size: {
+                width: 100,
+                height: 10
+              },
+              position: {
+                x: 50,
+                y: 100
+              }
+            }
+          ]
         }}
       />
       <div className="page">
