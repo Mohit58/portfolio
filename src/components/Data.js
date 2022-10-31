@@ -1,12 +1,12 @@
 const projects = [
     {
-        image:require("../assets/images/todoList.png"),
+        image:require("../assets/images/todo-react.png"),
         title:"TODO List App",
         description: "It is an To-Do List App, in which You can add new To-dos & also delete, edit and shuffle them.",
         link: "https://github.com/Mohit58/TodoApp"
     },
     {
-        image:require("../assets/images/todoList.png"),
+        image:require("../assets/images/todo-react-native.png"),
         title:"React Native TODO",
         description: "Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other (s) tries to guess it by suggesting letters within a certain number of guesses.",
         link: "https://github.com/Mohit58/todo-react-native"
