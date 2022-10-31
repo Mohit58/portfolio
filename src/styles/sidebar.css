@@ -140,3 +140,7 @@ li a {
         top:40%;
     }
 }
+
+.activeLink > svg > path {
+    fill:#fad754; 
+}

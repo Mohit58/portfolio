@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "../styles/sidebar.css";
 import logo from "../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,13 +23,15 @@ function Sidebar() {
   const [flag4, onHover4] = useHover(false);
   const [flag6, onHover6] = useHover(false);
 
+  const location = useLocation();
+
   return (
     <div className="sidebar">
       <Link to="/">
         <img src={logo} alt="Mohit Kumar" className="Mohit Kumar" />
       </Link>
       <nav>
-        <NavLink to="/">
+        <NavLink to="/" className={location.pathname === '/' ? 'activeLink' : ''}>
           {flag1 ? (
             <span onMouseOut={onHover1}>HOME</span>
           ) : (
@@ -40,7 +42,7 @@ function Sidebar() {
             />
           )}
         </NavLink>
-        <NavLink to="/projects">
+        <NavLink to="/projects" className={location.pathname === '/projects' ? 'activeLink' : ''}>
           {flag2 ? (
             <span onMouseOut={onHover2}>PROJECTS</span>
           ) : (
@@ -51,7 +53,7 @@ function Sidebar() {
             />
           )}
         </NavLink>
-        <NavLink to="/about">
+        <NavLink to="/about" className={location.pathname === '/about' ? 'activeLink' : ''}>
           {flag3 ? (
             <span onMouseOut={onHover3}>ABOUT</span>
           ) : (
@@ -62,7 +64,7 @@ function Sidebar() {
             />
           )}
         </NavLink>
-        <NavLink to="/contact">
+        <NavLink to="/contact" className={location.pathname === '/contact' ? 'activeLink' : ''}>
           {flag4 ? (
             <span onMouseOut={onHover4}>CONTACT</span>
           ) : (
@@ -73,7 +75,7 @@ function Sidebar() {
             />
           )}
         </NavLink>
-        <NavLink to="/timeline">
+        <NavLink to="/timeline" className={location.pathname === '/timeline' ? 'activeLink' : ''}>
           {flag6 ? (
             <span onMouseOut={onHover6}>TIMELINE</span>
           ) : (
